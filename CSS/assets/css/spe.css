@@ -1,0 +1,21 @@
+*{
+    background-color: lightblue;
+}
+
+
+h1{
+    background-color: brown;
+    color: beige;
+}
+
+.heading{
+    background-color: rgb(1, 41, 28);
+    color: rgb(225, 84, 84);
+}
+
+#heading-new{
+
+     background-color: rgb(7, 8, 8);
+     color: rgb(226, 220, 220);
+    
+}
