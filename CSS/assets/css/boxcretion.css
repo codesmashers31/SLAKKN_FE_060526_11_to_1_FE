@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.parent{
+    background-color: aquamarine;
+   
+}
+.box{
+
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: auto;
+}
+
+
+.box-one {
+   
+    margin: auto;
+    padding-top: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    color: black;
+}
