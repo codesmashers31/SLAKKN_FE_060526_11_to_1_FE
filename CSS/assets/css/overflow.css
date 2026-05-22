@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.overbox{
+    background-color: black;
+    color: white;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    overflow: auto;
+    word-wrap: break-word;
+}
