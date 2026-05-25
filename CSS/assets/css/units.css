@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+}
+
+ul{
+    list-style: none;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+input{
+
+    outline: none;
+}
+
+section{
+    min-height: 100vh;
+
+}
+
+.main{
+    background-color: aqua;
+    padding: 30px;
+}
+
+.sectionmain{
+    background-color: #0A014F;
+}
+
