@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+}
+
+
+
+.container{
+
+    background-color: bisque;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 10px;
+
+}
+
+.side{
+
+    background-color: white;
+    padding: 20px;
+
+}
+
+
+
+.main{
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+.parsentbox{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+  
+    height: 100vh;
+    gap: 20px;
+}
+
+.box {
+   background-color: black;
+   
+   color: white;
+   padding: 20px;
+}

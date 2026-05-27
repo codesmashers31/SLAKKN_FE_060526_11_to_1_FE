@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+}
+
+
+
+section{
+    min-height: 100vh;
+    background-color: rgb(194, 194, 193);
+}
+
+
+
+.gallery{
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    padding: 30px;
+    gap: 30px;
+    background-color: rgb(132, 132, 132);
+
+}
+
+img{
+    border-radius: 20px;
+    width: 250px;
+    height: 250px;
+}
+
+.java{
+    background-color: white;
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+p{
+    background-color: black;
+    padding: 10px;
+    width: 200px;
+    color: white;
+    text-align: center;
+}

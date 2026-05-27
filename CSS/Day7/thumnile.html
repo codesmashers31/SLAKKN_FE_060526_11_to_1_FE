@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thum</title>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+}
+        .parent{
+
+            background-color: rgb(179, 179, 179);
+            padding: 30px;
+
+        }
+
+        .child{
+            background-color: white;
+            padding: 30px;
+            border-radius: 20px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+       
+        .link{
+            border: solid 1px #fa522a; padding: 5px;text-decoration: none;color: #fa522a;
+        }
+        .link:hover{
+
+            background-color: #fa522a;
+            color: white;
+
+        }
+        img{
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+            <div class="images">
+                <img src="../assets/1.jpg" alt="" width="350px">
+            </div>
+            <div class="content">
+                <h5 style="color: gray;">Note: This image tile will be used to represent this course across all your academy's landing pages.</h5>
+                <p>Allowed formats: ".jpg, .png, .jpeg, .gif, .webp, .sketch"</p>
+                <p>Preferred minimum resolution: 480*270</p>
+                <p>Maximum size: 150kb</p>
+                <div class="" style="padding-top:6px;">
+                <a style="background-color: #fa522a;color:white;font-weight: lighter;text-decoration: none; padding: 5px;" href="">Change Image</a>
+                <a class="link" href="">Remove Image</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

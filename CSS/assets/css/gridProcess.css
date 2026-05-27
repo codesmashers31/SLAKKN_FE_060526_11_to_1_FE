@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+}
+
+
+.continer{
+    
+    background-color: black;
+    padding: 20px;
+    display: grid;
+    color: aliceblue;
+    grid-template-columns:1fr 1fr 1fr;
+    gap: 20px;
+
+}
+
+
+.box{
+    background-color: white;
+    padding: 20px;
+    color: black;
+}
+
+
+
+
+.container-two{
+
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+}
+
+.left{
+
+    background-color: blanchedalmond;
+    color: black;
+    padding: 20px;
+    display: grid;
+    grid-template-rows:1fr;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    border-radius: 20px;
+
+}
+
+.left img {
+    border-radius: 20px;
+}
+
+.right{
+    
+    background-image: url('../imags/tcs/p&p.jpg');
+    background-color: blanchedalmond;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: black;
+    padding: 20px;
+    display: grid;
+    place-content: center;
+    
+}
