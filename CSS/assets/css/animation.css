@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.animation{
+    background-color: black;
+    color: white;
+    padding: 30px;
+    height: 100vh;
+}
+
+.text{
+    background-color: white;
+    color: black;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    font-size: small;
+}
+
+.text:hover{
+    background-color: yellow;
+    color: blue;
+    transform: scale(1.8);
+}
+
+
+.textdata{
+    padding: 10px; 
+    border: none;
+    width: 500px;
+    border-radius: 8px;
+}
+
+.textdata:focus{
+    background-color: aquamarine;
+    color: black;
+    border: 1px solid blue;
+
+}
+
+
+.box{
+    background-color: orange;
+    color: black;
+    padding: 20px;
+}
+
+.box a:active {
+
+    background-color: yellow;
+    color: antiquewhite;
+
+}
+
+.data li:nth-child(1){
+
+    background-color: aqua;
+    color: rgb(0, 0, 0);
+
+}
+
+
+
+
+.element{
+    background-color: black;
+    color: white;
+    padding: 20px;
+
+}
+
+.child{
+    background-color: white;
+    color: black;
+    padding: 20px;
+}
+
+
+.text-one::first-letter{
+    content: "This is also Elements 😃";
+    color:blue
+}

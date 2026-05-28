@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.cards{
+    background-color: black;
+    height: 100vh;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 20px;
+}
+
+
+
+
+.box{
+    color: balck;
+    background-color: white;
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 20px;
+    transition: all 1.0s;
+}
+
+.box:hover{
+    transform:  translateX(100px)
+}
+
+.box img {
+    width: 260px;
+}
+
+.btn{
+    background-color: aqua;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    color: black;
+}
+
+
+.btn:hover{
+    background-color: brown;
+    color: white;
+}
