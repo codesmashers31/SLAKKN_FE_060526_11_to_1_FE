@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+}
+
+.box{
+
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    color: white;
+    position: relative;
+    top: 260px;
+    bottom: 100px;
+    left: 100px;
+    right: 100px;
+    
+
+}
+
+.box-one{
+
+    background-color: rgb(255, 8, 8);
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    color: white;
+    position: relative;
+    top: 200px;
+    bottom: 100px;
+    left: 100px;
+    right: 100px;
+   
+   
+
+}
+
+
+.absu{
+    background-color: aqua;
+    padding: 20px;
+  
+   
+}
+
+
+.para{
+    position:absolute;
+    background-color: rgb(4, 5, 5);
+    top: 200px;
+    color: white;
+}
+
+
+
+.titel{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100vw;
+}
+
+.stick{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    position: sticky;
+    top: 40px;
+}
