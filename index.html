@@ -1,42 +1,329 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Tasks</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Tailwind Website</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
-<body>
+
+<body class="bg-gray-100">
+
+<!-- ================= NAVBAR ================= -->
+
+<nav
+class="
+fixed
+top-0
+left-0
+w-full
+bg-white
+shadow-lg
+z-50
+">
+
+    <div
+    class="
+    max-w-7xl
+    mx-auto
+    px-6
+    py-4
+    flex
+    justify-between
+    items-center
+    ">
+
+        <!-- Logo -->
+
+        <h1
+        class="
+        text-2xl
+        font-bold
+        text-blue-600
+        ">
+
+            MyLogo
+
+        </h1>
+
+        <!-- Links -->
+
+        <ul
+        class="
+        flex
+        gap-8
+        font-medium
+        ">
+
+            <li>
+                <a href="#"
+                class="
+                hover:text-blue-500
+                transition
+                ">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="#about"
+                class="
+                hover:text-blue-500
+                transition
+                ">
+                    About
+                </a>
+            </li>
+
+            <li>
+                <a href="#"
+                class="
+                hover:text-blue-500
+                transition
+                ">
+                    Services
+                </a>
+            </li>
+
+            <li>
+                <a href="#"
+                class="
+                hover:text-blue-500
+                transition
+                ">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</nav>
+
+<!-- ================= HERO SECTION ================= -->
+
+<section
+class="
+h-screen
+bg-blue-500
+flex
+justify-center
+items-center
+text-white
+pt-20
+">
+
+    <div
+    class="
+    text-center
+    ">
+
+        <h1
+        class="
+        text-5xl
+        font-bold
+        mb-4
+        ">
+
+            Welcome To Tailwind CSS
+
+        </h1>
+
+        <p
+        class="
+        text-lg
+        mb-6
+        ">
+
+            Build modern responsive websites
+            using utility classes.
+
+        </p>
+
+        <button
+        class="
+        bg-white
+        text-blue-600
+        px-6
+        py-3
+        rounded-lg
+        font-semibold
+        hover:bg-gray-200
+        transition
+        ">
+
+            Get Started
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ================= ABOUT SECTION ================= -->
+
+<section
+id="about"
+class="
+max-w-12xl
+mx-auto
+py-20
+px-6 bg-black
+">
+
+    <div
+    class="
+    grid
+    grid-cols-1
+    md:grid-cols-2
+    gap-10
+    items-center
+    ">
+
+        <!-- Image -->
+
+        <div>
+
+            <img
+            src="https://picsum.photos/600/400"
+            class="
+            w-full
+            rounded-lg
+            shadow-lg
+            ">
+
+        </div>
+
+        <!-- Content -->
+
+        <div>
+
+            <h2
+            class="
+            text-4xl
+            font-bold
+            mb-6
+            ">
+
+                About Us
+
+            </h2>
+
+            <p
+            class="
+            text-gray-600
+            leading-8
+            mb-4
+            ">
+
+                Tailwind CSS is a utility-first
+                CSS framework that helps developers
+                build modern and responsive
+                user interfaces quickly.
+
+            </p>
+
+            <p
+            class="
+            text-gray-600
+            leading-8
+            ">
+
+                It provides reusable utility
+                classes for layout, spacing,
+                typography, colors, animations,
+                responsiveness, and modern UI
+                development.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<div class="max-w-7xl mx-auto p-5">
+
+   <div
+   class="
+   grid
+   grid-cols-1
+   md:grid-cols-2
+   lg:grid-cols-3
+   xl:grid-cols-4
+   gap-6
+   ">
+
+      <div
+      class="
+      bg-white
+      rounded-lg
+      shadow-lg
+      overflow-hidden
+      ">
+
+         <img
+         src="img.jpg"
+         class="
+         w-full
+         h-56
+         object-cover">
+
+         <div class="p-5">
+
+            <h2
+            class="
+            text-xl
+            font-bold
+            mb-2
+            ">
+
+               Frontend
+
+            </h2>
+
+            <p
+            class="
+            text-gray-500
+            mb-4
+            ">
+
+               Learn HTML CSS JS
+
+            </p>
+
+            <button
+            class="
+            bg-blue-500
+            text-white
+            px-4
+            py-2
+            rounded
+            ">
+
+               Read More
+
+            </button>
+
+         </div>
+
+      </div>
+
+   </div>
+
+</div>
 
 
-	<div>
-		<h1>Task List</h1>
-		<a href="HTML/Day4/tnvoteresult.html">Day 5 Assinments</a>
 
-	</div>
-
-	<div>
-		<a href="HTML/Day5/iplinfo.html">Day 5 Assinments IPL Website</a>
-	</div>
-
-	<div>
-		<a href="HTML/Day6/formelements.html">Day 6 Form Elements</a>
-	</div>
-	<div>
-		<a href="HTML/Day7/table.html">Day 7 Form Elements & table</a>
-	</div>
-    
- <div>
-	<a href="CSS/assets/text/task1.txt">Day 1 CSS - Task 1</a>
- </div>
-  <div>
-	<a href="CSS/Day1/inline.html">Day 1 CSS - Task 2</a>
- </div>
- <div>
-	<a href="CSS/Day1/internal.html">Day 1 CSS - Task 3</a>
- </div>
-
-  <div>
-	<a href="CSS/Day1/external.html">Day 1 CSS - Task 3</a>
- </div>
 </body>
+
 </html>
