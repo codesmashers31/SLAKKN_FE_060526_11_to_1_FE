@@ -1,0 +1,82 @@
+<script>
+    // Functions
+
+    // parameter & arguments
+    
+    // parameter
+
+    // const addData = (a,b,c,d)=>{
+
+    //     console.log(a,b,c,d);
+    //     if(a>10){
+    //         console.log("yes its ture");
+            
+    //     }else{
+    //         console.log("Not its not ture");
+            
+    //     }
+
+    // }
+
+    // // arguments
+
+
+    // addData(13,4,8,0)
+
+
+//    const checkEven = (arr)=>{
+
+//         for(let a=1;a<arr.length;a++){
+
+//             if(arr[a]%2===0){
+//                 console.log('even number',arr[a]);
+                
+//             }
+
+//         }
+        
+       
+//    }
+
+
+//    checkEven([1,2,3,4,5,6,7,8,100])
+
+
+
+// write a function - pass the value using argumanet to the parameter
+// value is 10 - 10 time i use the serios plus.
+// first i want 0 - + 1 + result + next itrate value 
+
+const fibo = (num)=>{
+
+   let firstValue = 0;
+   let secondValue = 1;
+
+   console.log(firstValue);
+   console.log(secondValue);
+   
+   
+   for(let f=3;f<=num;f++){
+     
+    let result = firstValue + secondValue 
+
+    // 2
+    console.log(result);
+                                                           
+    firstValue = secondValue 
+    // 1
+
+    secondValue = result
+    // 2
+
+    
+
+   }
+
+
+}
+
+fibo(4)
+// 0, 1, 1, 2, 3, 5, 8, 13, 21, 34
+
+</script>
