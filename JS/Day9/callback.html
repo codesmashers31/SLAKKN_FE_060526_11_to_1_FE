@@ -53,4 +53,90 @@
 
 
 // console.log('ac data come');
+
+
+// const add = (a,data)=>{
+
+//     //console.log(data);
+//     console.log(a);
+    
+//     data(2)
+
+// }
+
+// const datas = (a)=>{
+
+//     console.log('this is callback',a);
+    
+
+// }
+
+// add(10,datas)
+
+// ()=>{
+
+// }
+
+
+const add = ()=>{
+
+let values = 0
+
+
+return {
+
+    firstfunction : (value)=>{
+
+    values += value
+    console.log(values);
+    
+
+},
+    secondFunction:(value)=>{
+
+      
+
+        if(values<=value){
+            console.log('Your Values is not match to the original give the below value')
+            return
+        }else{
+
+        values -= value
+        console.log(values);
+            
+        }
+
+   }
+
+
+}
+
+
+}
+
+const referance = add()
+
+
+referance.firstfunction(100)
+referance.secondFunction(50)
+
+
+
+
+// const newadd = ()=>{
+//     let numbers = 0
+
+    
+//     numbers += 1
+
+//     console.log(numbers);
+    
+
+
+// }
+
+// newadd()
+// newadd()
+// newadd()
+
 </script>
