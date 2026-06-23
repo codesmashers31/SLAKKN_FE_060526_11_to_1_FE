@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+   <h1 id="heading">This is dom</h1> 
+   
+   <a href="" >Change  the Text</a>
+
+   <button onclick="clickTheValue()">Click to Show</button>
+
+   <input type="text" onchange="clickTheValue()">
+
+   <form action="" onsubmit="clickTheValue()">
+    <input type="text" name="" id="">
+    <input type="submit" name="" value="login" id="">
+   </form>
+
+
+   <h2 class="hide">This is Class</h2>
+   <p>This is my para element</p>
+   <p id="para">Query Selector 1</p>
+   <p id="para">Query Selector 2</p>
+   <p id="para">Query Selector 3</p>
+
+  
+   <h1 id="title">This is my Updated value</h1>
+
+
+   <script>
+
+       const title = document.getElementById("heading")
+
+       console.log(title);
+
+       const display = document.getElementsByClassName("hide")
+       
+       console.log(display);
+
+       const elements = document.getElementsByTagName("p")
+       console.log(elements);
+
+       const para1 = document.querySelector("#para")
+      
+       console.log(para1);
+       
+       const para2 = document.querySelectorAll("#para")
+       console.log(para2);
+       
+        
+    //    const link = document.getElementById("link")
+
+    
+    
+    const mytitle = document.getElementById("title")
+    
+
+const clickTheValue = ()=>{
+
+    //alert('This is Click')
+
+    mytitle.textContent = "This is my Updated Value 2344"
+
+    console.log(mytitle);
+    
+
+} 
+
+
+
+
+
+   </script>
+</body>
+</html>

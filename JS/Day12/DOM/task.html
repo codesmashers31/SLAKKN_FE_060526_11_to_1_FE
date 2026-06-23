@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM TASK</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+
+<h1 id="title" class="bg-blue-500 p-3 mb-2 text-white text-center text-2xl">This is MY Dom</h1>
+
+<div class="flex justify-center gap-5">
+    <input type="text" id="getValue" class="border rounded p-2 w-100 ">
+
+<button onclick="clicktoChange()" class="bg-black text-white text-center p-1 w-50 rounded">Click to Show</button>
+</div>
+
+
+<div  class="bg-black m-2 p-2 w-100 h-100 hide">
+    BOX
+</div>
+
+<button onclick="hide()">Click to Hide</button>
+
+
+
+
+<script>
+    const clicktoChange = ()=>{
+
+        const titleValue = document.getElementById("title")
+        const inputValue = document.getElementById("getValue").value
+        
+       
+        
+
+        if(typeof inputValue === "string"){
+            titleValue.innerText += ""
+            titleValue.innerText += ` - ${inputValue}`
+            
+            return
+        }else if(typeof inputValue === "number" && inputValue % 2 === 0){
+            
+            titleValue.innerText += "Even Number"
+            return
+        }
+        else{
+
+            titleValue.innerText += "Odd Number"
+            return
+
+        }
+
+    }
+
+
+    const hide = ()=>{
+
+        const box = document.querySelector(".hide")
+
+        box.style.display =  "none"
+
+    }
+</script>
+    
+</body>
+</html>
