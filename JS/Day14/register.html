@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    
+
+<div>
+    <form id="fromdata"> 
+        <input type="text" id="userName" placeholder="Enter the Name">
+        <input type="email" id="userEmail" placeholder="Enter the Email">
+        <input type="password"  id="userPassword" placeholder="Enter the password">
+        <button onclick="RegisterData(event)">Register</button>
+    </form>
+    <p>Already Register <a href="login.html">Login</a></p>
+</div>
+
+<div>
+    <form id="fromdatalogin"> 
+      
+        <input type="email" id="loginEmail" placeholder="Enter the Email">
+        <input type="password"  id="loginPassword" placeholder="Enter the password">
+        <button onclick="LoginData(event)">Login</button>
+    </form>
+</div>
+
+
+<script src="auth.js"></script>
+</body>
+</html>
