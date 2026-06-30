@@ -1,0 +1,64 @@
+<script>
+
+    console.log('Start');
+    
+    //     setTimeout(()=>{
+       
+    //     setTimeout(()=>{
+    // console.log('use the darta and move to Dashborad');
+    // setTimeout(()=>{
+    // console.log('Dashboard take the data from the database');
+    // },1000)
+    //     },2000)
+    //     },3000)
+
+    //     const DataTake = ()=>{
+    //       console.log('first line for Database Data');
+    //     }
+
+    //     const Showingdata = (data)=>{
+
+    //        data()
+    //        console.log('Use the data');
+           
+     
+
+    //     }
+
+    // Showingdata(DataTake)
+    // for(let a=1;a<=10;a++){
+
+    //     console.log(a);
+        
+
+    // }
+    
+    // syntex
+    
+    const TakleData = ()=>{
+        return new Promise((reject,resolve)=>{
+
+        })
+    }
+
+    // console.log(myPromise);
+
+    // myPromise.then((data)=>console.log(data)
+    // ).catch((error)=>console.log(error)
+    // )
+    
+    const data = async()=>{
+
+        const data = await fetch("https://dummyjson.com/products")
+        const res = await data.json()
+        
+        console.log(res.products);
+        
+   
+    }
+
+    data()
+
+    console.log(data());
+    
+</script>

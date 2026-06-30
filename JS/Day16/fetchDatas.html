@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch</title>
+</head>
+<body>
+
+
+    <table>
+        <thead>
+            <th>S.no</th>
+            <th>Name</th>
+            <th>Brand</th>
+            <th>Category</th>
+        </thead>
+
+        <tbody id="usersData">
+
+        </tbody>
+
+
+    </table>
+    
+
+    <script>
+
+    //  async function
+    
+    const Datatake = async()=>{
+
+    // using await in fetch function
+    
+    const datas = await fetch("https://dummyjson.com/users")
+
+    
+
+    // data parsing
+
+    const res = await datas.json()
+
+
+    // Data store from the anotgher mechine
+    
+    const result = res.users
+
+    // Take UI form the html - docu
+    
+     let users_Data = document.getElementById("usersData")
+
+    // result foreach - innerHTML
+     
+    result.forEach((e,i)=>{
+        users_Data.innerHTML += `
+               
+                    <tr>
+              <td>${i+1}</td>
+              
+              <td>${e.firstName}</td> 
+              <td>${e.gender}</td> 
+              <td>${e.phone}</td> 
+                 
+            </tr>  
+
+        
+        `
+    })
+    
+    
+
+
+
+    }
+
+// Function Call
+    Datatake()
+    
+
+
+        // const datas = async()=>{
+          
+        //   const res = await fetch("https://dummyjson.com/products")
+      
+          
+        //   const chnageData = await res.json()
+
+        //   //console.log(chnageData.products);
+          
+        // const  result = chnageData.products
+
+
+        // let users = document.getElementById("usersData")
+
+        // //console.log(result);
+        
+         
+        //  result.forEach((e,i)=>{
+
+        //     users.innerHTML += `
+            
+        //     <tr>
+        //       <td>${i+1}</td>
+              
+        //       <td>${e.title}</td> 
+        //       <td>${e.brand}</td> 
+        //       <td>${e.category}</td> 
+                 
+        //     </tr>
+            
+            
+            
+            
+        //     `
+
+        //  });
+
+
+
+        // }
+       
+        
+        // datas()
+
+       
+    </script>
+</body>
+</html>
